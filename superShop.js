@@ -5,3 +5,11 @@ function calculateTotalPrice() {
     var totalPrice = item1 + item2 + item3;
     document.getElementById("totalPrice").value = "Total Price: $" + totalPrice.toFixed(2);
 }
+
+
+function Send() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    alert("Message sent!\nName: " + username + "\nEmail: " + email + "\nPhone: " + phone);
+}
